@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB763C7F15E3B100004C7580 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB763C7E15E3B100004C7580 /* UIKit.framework */; };
+		CB763C8115E3B100004C7580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB763C8015E3B100004C7580 /* Foundation.framework */; };
+		CB763C8315E3B100004C7580 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB763C8215E3B100004C7580 /* CoreGraphics.framework */; };
+		CB763C8915E3B100004C7580 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB763C8715E3B100004C7580 /* InfoPlist.strings */; };
+		CB763C8B15E3B100004C7580 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB763C8A15E3B100004C7580 /* main.m */; };
+		CB763C8F15E3B100004C7580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB763C8E15E3B100004C7580 /* AppDelegate.m */; };
+		CB763C9215E3B100004C7580 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB763C9115E3B100004C7580 /* ViewController.m */; };
+		CB763C9515E3B100004C7580 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB763C9315E3B100004C7580 /* ViewController_iPhone.xib */; };
+		CB763C9815E3B100004C7580 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB763C9615E3B100004C7580 /* ViewController_iPad.xib */; };
+		CB763CA715E3B5A8004C7580 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB763CA615E3B5A8004C7580 /* QuartzCore.framework */; };
+		CBE451AE15EE2E25005F5EB4 /* AJProgressPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE451AD15EE2E25005F5EB4 /* AJProgressPanel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB763C7A15E3B100004C7580 /* AJProgressPanelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AJProgressPanelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB763C7E15E3B100004C7580 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CB763C8015E3B100004C7580 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB763C8215E3B100004C7580 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB763C8615E3B100004C7580 /* AJProgressPanelDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AJProgressPanelDemo-Info.plist"; sourceTree = "<group>"; };
+		CB763C8815E3B100004C7580 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB763C8A15E3B100004C7580 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB763C8C15E3B100004C7580 /* AJProgressPanelDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AJProgressPanelDemo-Prefix.pch"; sourceTree = "<group>"; };
+		CB763C8D15E3B100004C7580 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB763C8E15E3B100004C7580 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB763C9015E3B100004C7580 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB763C9115E3B100004C7580 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB763C9415E3B100004C7580 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CB763C9715E3B100004C7580 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CB763CA615E3B5A8004C7580 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CBE451AC15EE2E25005F5EB4 /* AJProgressPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AJProgressPanel.h; path = ../../AJProgressPanel/AJProgressPanel.h; sourceTree = "<group>"; };
+		CBE451AD15EE2E25005F5EB4 /* AJProgressPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AJProgressPanel.m; path = ../../AJProgressPanel/AJProgressPanel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB763C7715E3B100004C7580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB763CA715E3B5A8004C7580 /* QuartzCore.framework in Frameworks */,
+				CB763C7F15E3B100004C7580 /* UIKit.framework in Frameworks */,
+				CB763C8115E3B100004C7580 /* Foundation.framework in Frameworks */,
+				CB763C8315E3B100004C7580 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB763C6F15E3B100004C7580 = {
+			isa = PBXGroup;
+			children = (
+				CB763C8415E3B100004C7580 /* AJIndeterminateProgressPanelDemo */,
+				CB763C7D15E3B100004C7580 /* Frameworks */,
+				CB763C7B15E3B100004C7580 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB763C7B15E3B100004C7580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB763C7A15E3B100004C7580 /* AJProgressPanelDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB763C7D15E3B100004C7580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB763CA615E3B5A8004C7580 /* QuartzCore.framework */,
+				CB763C7E15E3B100004C7580 /* UIKit.framework */,
+				CB763C8015E3B100004C7580 /* Foundation.framework */,
+				CB763C8215E3B100004C7580 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB763C8415E3B100004C7580 /* AJIndeterminateProgressPanelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB763C9E15E3B11A004C7580 /* AJProgressPanel */,
+				CB763C8D15E3B100004C7580 /* AppDelegate.h */,
+				CB763C8E15E3B100004C7580 /* AppDelegate.m */,
+				CB763C9015E3B100004C7580 /* ViewController.h */,
+				CB763C9115E3B100004C7580 /* ViewController.m */,
+				CB763C9315E3B100004C7580 /* ViewController_iPhone.xib */,
+				CB763C9615E3B100004C7580 /* ViewController_iPad.xib */,
+				CB763C8515E3B100004C7580 /* Supporting Files */,
+			);
+			path = AJIndeterminateProgressPanelDemo;
+			sourceTree = "<group>";
+		};
+		CB763C8515E3B100004C7580 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB763C8615E3B100004C7580 /* AJProgressPanelDemo-Info.plist */,
+				CB763C8715E3B100004C7580 /* InfoPlist.strings */,
+				CB763C8A15E3B100004C7580 /* main.m */,
+				CB763C8C15E3B100004C7580 /* AJProgressPanelDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB763C9E15E3B11A004C7580 /* AJProgressPanel */ = {
+			isa = PBXGroup;
+			children = (
+				CBE451AC15EE2E25005F5EB4 /* AJProgressPanel.h */,
+				CBE451AD15EE2E25005F5EB4 /* AJProgressPanel.m */,
+			);
+			name = AJProgressPanel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB763C7915E3B100004C7580 /* AJProgressPanelDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB763C9B15E3B100004C7580 /* Build configuration list for PBXNativeTarget "AJProgressPanelDemo" */;
+			buildPhases = (
+				CB763C7615E3B100004C7580 /* Sources */,
+				CB763C7715E3B100004C7580 /* Frameworks */,
+				CB763C7815E3B100004C7580 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AJProgressPanelDemo;
+			productName = AJIndeterminateProgressPanelDemo;
+			productReference = CB763C7A15E3B100004C7580 /* AJProgressPanelDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB763C7115E3B100004C7580 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = CodeApps;
+			};
+			buildConfigurationList = CB763C7415E3B100004C7580 /* Build configuration list for PBXProject "AJProgressPanelDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB763C6F15E3B100004C7580;
+			productRefGroup = CB763C7B15E3B100004C7580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB763C7915E3B100004C7580 /* AJProgressPanelDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB763C7815E3B100004C7580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB763C8915E3B100004C7580 /* InfoPlist.strings in Resources */,
+				CB763C9515E3B100004C7580 /* ViewController_iPhone.xib in Resources */,
+				CB763C9815E3B100004C7580 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB763C7615E3B100004C7580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB763C8B15E3B100004C7580 /* main.m in Sources */,
+				CB763C8F15E3B100004C7580 /* AppDelegate.m in Sources */,
+				CB763C9215E3B100004C7580 /* ViewController.m in Sources */,
+				CBE451AE15EE2E25005F5EB4 /* AJProgressPanel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB763C8715E3B100004C7580 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB763C8815E3B100004C7580 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CB763C9315E3B100004C7580 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB763C9415E3B100004C7580 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CB763C9615E3B100004C7580 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB763C9715E3B100004C7580 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB763C9915E3B100004C7580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB763C9A15E3B100004C7580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB763C9C15E3B100004C7580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AJIndeterminateProgressPanelDemo/AJProgressPanelDemo-Prefix.pch";
+				INFOPLIST_FILE = "AJIndeterminateProgressPanelDemo/AJProgressPanelDemo-Info.plist";
+				PRODUCT_NAME = AJProgressPanelDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CB763C9D15E3B100004C7580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AJIndeterminateProgressPanelDemo/AJProgressPanelDemo-Prefix.pch";
+				INFOPLIST_FILE = "AJIndeterminateProgressPanelDemo/AJProgressPanelDemo-Info.plist";
+				PRODUCT_NAME = AJProgressPanelDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB763C7415E3B100004C7580 /* Build configuration list for PBXProject "AJProgressPanelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB763C9915E3B100004C7580 /* Debug */,
+				CB763C9A15E3B100004C7580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB763C9B15E3B100004C7580 /* Build configuration list for PBXNativeTarget "AJProgressPanelDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB763C9C15E3B100004C7580 /* Debug */,
+				CB763C9D15E3B100004C7580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB763C7115E3B100004C7580 /* Project object */;
+}
