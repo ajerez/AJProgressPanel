@@ -29,6 +29,7 @@ const CGFloat BAR_HEIGHT = 8.0f; //Progress bar height
 @property (nonatomic, strong) UIColor *endGradientColor;
 @property (nonatomic, strong) UIColor *stripesColor;
 @property (nonatomic, assign) BOOL enableShadow;
+@property (nonatomic, assign) int thePosition;
 @property (nonatomic, assign) CGFloat progress;
 @property (nonatomic, assign) CGFloat moveFactor;
 @property (nonatomic, strong) UIColor *progressColor;
@@ -42,6 +43,7 @@ const CGFloat BAR_HEIGHT = 8.0f; //Progress bar height
     if (self){
         self.progress = layer.progress;
         self.enableShadow = layer.enableShadow;
+        self.thePosition = layer.thePosition;
         self.stripesColor = layer.stripesColor;
         self.endGradientColor = layer.endGradientColor;
         self.startGradientColor = layer.startGradientColor;
@@ -59,7 +61,6 @@ const CGFloat BAR_HEIGHT = 8.0f; //Progress bar height
 }
 
 - (void)drawInContext:(CGContextRef)ctx{
-    
     CGRect rect = self.bounds;
     CGContextClipToRect(ctx, rect);
     
@@ -97,6 +98,15 @@ const CGFloat BAR_HEIGHT = 8.0f; //Progress bar height
     CGContextSetStrokeColorWithColor(ctx, self.stripesColor.CGColor);
     CGContextDrawPath(ctx, kCGPathStroke);
     CGContextRestoreGState(ctx);
+    
+    // Draw Shadow
+    if (self.enableShadow){
+        CGFloat fixedOffset = (self.thePosition == 0 ? 1.0f : -1.0);
+        self.shadowColor = [UIColor blackColor].CGColor;
+        self.shadowOpacity = 0.5f;
+        self.shadowOffset = CGSizeMake(0.0, fixedOffset);
+        self.shadowRadius = 2.0f;
+    }
     
     // Progress
     if (self.progress != 0.0f){
@@ -248,14 +258,17 @@ const CGFloat BAR_HEIGHT = 8.0f; //Progress bar height
 - (void)setEnableShadow:(BOOL)enableShadow
 {
     [self currentLayer].enableShadow = enableShadow;
-    // Draw Shadow
-    if (self.enableShadow){
-        CGFloat fixedOffset = (self.position == AJPanelPositionTop ? 1.0f : -1.0);
-        self.layer.shadowColor = [UIColor blackColor].CGColor;
-        self.layer.shadowOpacity = 0.5f;
-        self.layer.shadowOffset = CGSizeMake(0.0, fixedOffset);
-        self.layer.shadowRadius = 2.0f;
-    }
+    [[self currentLayer] setNeedsDisplay];
+}
+
+#pragma mark position
+- (AJPanelPosition)position{
+    return [self currentLayer].thePosition;
+}
+
+- (void)setPosition:(AJPanelPosition)position
+{
+    [self currentLayer].thePosition = position;
     [[self currentLayer] setNeedsDisplay];
 }
 
@@ -268,7 +281,7 @@ const CGFloat BAR_HEIGHT = 8.0f; //Progress bar height
 + (AJProgressPanel *)showInView:(UIView *)view position:(AJPanelPosition)position {
     CGFloat fixedY = (position == AJPanelPositionTop ? 0.0f : view.bounds.size.height);
     AJProgressPanel *progressView = [[self alloc] initWithFrame:CGRectMake(0.0f, fixedY, view.bounds.size.width, 1.0f)];
-    progressView.position = (position == AJPanelPositionTop ? AJPanelPositionTop : AJPanelPositionBottom);
+    progressView.position = position;
     
     
     [view addSubview:progressView];

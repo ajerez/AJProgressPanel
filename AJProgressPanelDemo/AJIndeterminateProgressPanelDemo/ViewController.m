@@ -36,7 +36,7 @@
     
     //Custom
     self.panel2 = [AJProgressPanel showInView:self.secondView position:AJPanelPositionBottom];
-    self.panel2.enableShadow = NO;
+    //self.panel2.enableShadow = NO;
     self.panel2.startGradientColor = [UIColor colorWithWhite:0.35f alpha:1.0f];
     self.panel2.endGradientColor = [UIColor colorWithWhite:0.25f alpha:1.0f];
     self.panel2.stripesColor = [UIColor colorWithRed:40.0f/255 green:140.0f/255 blue:193.0f/255 alpha:1.0f];
